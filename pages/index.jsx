@@ -2,9 +2,9 @@ import Head from 'next/head';
 import ScrollingColorBackground from 'react-scrolling-color-background';
 import styles from '../styles/Home.module.css';
 
-const darkPurpleRgb = 'rgb(101, 45, 172)';
-const ceriseRgb = 'rgb(217, 38, 136)';
-const pumpkinRgb = 'rgb(255, 102, 22)';
+const darkPurpleRgb = 'rgb(92, 228, 202)';
+const ceriseRgb = 'rgb(67, 97, 238)';
+const pumpkinRgb = 'rgb(56, 176, 0)';
 
 export default function Home() {
   return (
@@ -23,13 +23,39 @@ export default function Home() {
         <section
           className="js-color-stop"
           data-background-color={darkPurpleRgb}
-          style={{ height: '100vh' }}
-        />
+          style={{ height: '100vh', display: 'flex', justifyContent: 'center' }}
+        >
+          <h1 style={{ position: 'absolute', fontSize: '10rem' }}>Salut!</h1>
+        </section>
         <section
           className="js-color-stop"
           data-background-color={ceriseRgb}
-          style={{ height: '100vh' }}
-        />
+          style={{ height: '100vh', display: 'flex', justifyContent: 'center' }}
+        >
+          <h1
+            style={{
+              position: 'absolute',
+              textAlign: 'center',
+              fontSize: '10rem',
+            }}
+          >
+            BIGLEMONN!!
+          </h1>
+        </section>
+        <section
+          className="js-color-stop"
+          data-background-color={pumpkinRgb}
+          style={{ height: '100vh', display: 'flex', justifyContent: 'center' }}
+        >
+          <h1
+            style={{
+              position: 'absolute',
+              fontSize: '10rem',
+            }}
+          >
+            Voilààà
+          </h1>
+        </section>
       </main>
     </div>
   );
